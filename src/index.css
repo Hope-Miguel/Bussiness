@@ -1,0 +1,227 @@
+:root{
+    --theme-color:#fd5115;
+    --title-color:#1e2b56;
+    --body-color:#65666d;
+    --white-color: #ffffff;
+    --border-color: #e0e0e0;
+    --black-color: black;
+    --title-font: 'Roboto Flex', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+
+.block{
+    display: block;
+}
+
+.p-6{
+    padding: 4rem;
+}
+
+.pd{
+    padding: 6rem 2rem 0rem 6rem ;
+}
+
+.mb-0{
+    margin-bottom: 0 !important;
+}
+
+
+
+.h5{
+    font-size: 14px!important;
+}
+.h1, h1, .h2, h2, .h3, h3, .h4, h4, .h5, h5, .h6, h6 {
+    font-family: var(--title-font);
+    color: var(--title-color);
+    text-transform: none;
+    font-weight: 700 !important;
+    line-height: 1.4;
+    margin: 0 0 15px 0;
+    margin-bottom: 15px;
+}
+
+
+.line{
+    height: 2px;
+    width: 40px;
+    background-color: var(--theme-color);
+    display: block;
+    margin: 0 0 15px 0;
+}
+
+.span-about{
+    font-size: 13px;
+    font-weight: 700;
+    color:var(--theme-color) ;
+    display: block;
+    text-transform: uppercase;
+}
+
+.title-about{
+    font-size: 30px;
+    margin-top: 12px;
+    font-weight: 700;
+}
+
+.text-about{
+    color: var(--body-color);
+    line-height: 1.50;
+    font-size: 13px;
+}
+
+.MuiListItemIcon-root {
+    min-width: 30px !important;
+    font-size: 12px;
+}
+
+.MuiCard-root {
+    overflow: hidden;
+    margin-top: -4rem;
+    position: absolute;
+    margin-left: 8rem;
+}
+
+.MuiTypography-body1{
+    color: var(--body-color);
+    font-size: 13px !important;
+    line-height: normal !important;
+}
+
+.MuiListItem-root {
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+}
+
+.MuiSvgIcon-colorAction, .MuiListItemIcon-root {
+    color: var(--theme-color) !important;
+}
+
+.owl-theme{
+    margin-top: 10rem;
+}
+
+.item{
+    padding: 8px;
+}
+
+.icon-bord{
+    width: 100%;
+    height: 60px;
+    border: 1px solid var(--body-color);
+    border-radius: 20px;
+}
+.sec-title{
+    font-size: 14px;
+    color: var(--body-color);
+}
+.event-date{
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1;
+    text-align: center;
+}
+
+.event-card .event-date{
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1;
+    text-align: center;
+    border-radius: 38% 38% 38% 38%/38% 38% 38% 38%;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    z-index: 1;
+    padding: 15px 0;
+    margin: 0 0 4px 4px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.event-card .event-date::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    background-color: var(--theme-color);
+    z-index: -1;
+    transform: rotate(45deg);
+}
+
+.day{
+    font-size: 45px;
+    display: block;
+}
+
+.cards-events{
+    position: relative;
+    min-width: 100%;
+    margin-top: 4rem;
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    box-shadow: 20px 20px 20px 20px;
+}
+
+.plan{
+    position: relative;
+    background-image: url(/src/assets/plan.png);
+    margin-top: 4rem;
+    padding-bottom: 6rem;
+}
+
+
+.cardservi .card{
+    border-radius: 0;
+}
+
+.btn-plan {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    border: 1px solid var(--theme-color);
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--black-color);
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+.views-btn span{
+    position: absolute;
+    left: 5px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--theme-color);
+    border-radius: 50%;
+    transition: .5s ease-in-out;
+    margin-left: -5px;
+    
+}
+
+.accordion-item {
+    border: none !important;
+  }
+
+.accordion-button{
+    color: var(--title-color) !important;
+}
+
+.accordion-item:first-of-type .accordion-button {
+    border-radius: 60px !important;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--border-color) !important;
+    background-color: var(--title-color) !important;
+    box-shadow: none !important;
+  }
